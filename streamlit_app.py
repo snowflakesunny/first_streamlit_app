@@ -1,2 +1,3 @@
 import streamlit
-print("This is the first python Code.")
+streamlit.title("My Parents New healthy Dinner.")
+streamlit.header("Breakfast Menu")
