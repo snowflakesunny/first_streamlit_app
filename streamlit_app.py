@@ -66,7 +66,7 @@ def insert_row_snowflake(new_fruit):
 new_fruit = streamlit.text_input('What fruit would you like to add?', 'JackFruit')
 try:
   new_fruit = streamlit.text_input('What fruit would you like to add?')
-  if not new_fruit
+  if not new_fruit:
        streamlit.error("Please Enter a fruit name to get it added.")
   else:
        insert_to_function = insert_row_snowflake(new_fruit)
