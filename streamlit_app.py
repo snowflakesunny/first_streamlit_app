@@ -71,4 +71,6 @@ try:
   else:
        insert_to_function = insert_row_snowflake(new_fruit)
        streamlit.dataframe(insert_to_function)
-    
+
+except URLError as e:
+  streamlit.error()
